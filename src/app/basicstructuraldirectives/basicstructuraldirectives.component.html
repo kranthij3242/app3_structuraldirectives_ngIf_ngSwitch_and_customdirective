@@ -1,0 +1,15 @@
+<h1 *ngIf = "visible;then ramesh;else kranthi"></h1>
+<button (click) = "changevalue()">change</button>
+<ng-template #ramesh>I am a Lecturer</ng-template>
+<ng-template #kranthi>I am a Learner</ng-template><br><br><br>
+
+
+<div [ngSwitch]= "myname">
+    <div *ngSwitchCase="'ramesh'">I am your Brother</div>
+    <div *ngSwitchCase="'mahesh'">I am a superstar</div>
+    <div *ngSwitchCase="'naresh'">I am a comedian</div>
+    <div *ngSwitchDefault>I DOn't have your Info</div>
+</div>
+
+<!--<a href="#">Click Here</a> -->
+<h1 appApplycolor>I am Kranthi</h1>
